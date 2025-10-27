@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/projects/FOWL - Fully Outsourced Wisdom Linkage.md",
+                "file": "deleted/reflective-karakuri/2025-Reflective-Karakuri-ObservationReport.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FOWL - Fully Outsourced Wisdom Linkage"
+              "title": "2025-Reflective-Karakuri-ObservationReport"
+            }
+          },
+          {
+            "id": "c3909fff1f5b65e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Three paths.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Three paths"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,11 +184,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "fad09de6b36aa440",
+  "active": "c3909fff1f5b65e2",
   "lastOpenFiles": [
+    "deleted/reflective-karakuri/2025-Reflective-Karakuri-ObservationReport.md",
+    "Three paths.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "deleted/reflective-karakuri/2025-Reflective-Karakuri-CFP.md",
+    "docs/projects/FOWL.md",
+    "docs/notes/Configuring-SSH-Key-based-Authentication.md",
+    "scripts/restore_from_share.md",
+    "scripts/publish_and_backup.md",
+    "docs/notes/Fedora_MAC_Address_Randomization_Issue.md",
+    "docs/reflective-computing/index.md",
+    "docs/notes/mermaid-recovery-checklist.md",
+    "docs/notes/github-actions-vs-aws-cicd.md",
+    "docs/notes/fedora-samba-permissions.md",
+    "docs/notes/fcitx5-setup.md",
+    "docs/reflective-computing/reflective-computing-manifesto.md",
     "docs/projects/dsl-inference-app.md",
     "docs/projects/FOWL - Fully Outsourced Wisdom Linkage.md",
-    "Untitled.canvas",
     "README.md",
     "delete/index.md",
     "docs/index.md"
