@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fowl-fully-outsourced-wisdom-linkage" class="md-skip">
+        <a href="#fowl-fully-operational-wisdom-and-logic" class="md-skip">
           Skip to content
         </a>
       
@@ -491,36 +491,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#areas" class="md-nav__link">
+  <a href="#areas-of-design" class="md-nav__link">
     <span class="md-ellipsis">
-      Areas
+      Areas of Design
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nodes" class="md-nav__link">
+  <a href="#node-roles" class="md-nav__link">
     <span class="md-ellipsis">
-      Nodes
+      Node Roles
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#current-fowl-architecture" class="md-nav__link">
+  <a href="#monitoring-security-context" class="md-nav__link">
     <span class="md-ellipsis">
-      Current FOWL Architecture
+      Monitoring &amp; Security Context
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
+  <a href="#integration-roadmap" class="md-nav__link">
     <span class="md-ellipsis">
-      Notes
+      Integration Roadmap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#philosophical-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Philosophical Context
     </span>
   </a>
   
@@ -915,110 +924,196 @@
 
 
 
-<h1 id="fowl-fully-outsourced-wisdom-linkage">FOWL - Fully Outsourced Wisdom Linkage<a class="headerlink" href="#fowl-fully-outsourced-wisdom-linkage" title="Permanent link">&para;</a></h1>
+<h1 id="fowl-fully-operational-wisdom-and-logic">🦆 FOWL — Fully Operational Wisdom and Logic<a class="headerlink" href="#fowl-fully-operational-wisdom-and-logic" title="Permanent link">&para;</a></h1>
 <h2 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">&para;</a></h2>
-<p>FOWL is my multi-machine lab: Ubuntu (desktop), Fedora (laptop), RHEL (server), and Fedora Server (observatory), which is based on my concept of "philosophy of systems". My focus on the architectual design of FOWL is DSL runner apps on local/remote AI models, Linux automation, backups, and observatory (Grafana) as an integrated Reflective Computing unit for my creative workflows. FOWL is a working example of my concept of "philosophy of systems."</p>
-<h2 id="areas">Areas<a class="headerlink" href="#areas" title="Permanent link">&para;</a></h2>
+<p><strong>FOWL (Fully Operational Wisdom and Logic)</strong> is my multi-machine laboratory for <strong>Reflective Computing</strong>, built as a living implementation of my concept, the <strong>Philosophy of Systems</strong>.</p>
+<p>FOWL integrates distinct operating systems — <strong>Ubuntu (desktop)</strong>, <strong>Fedora (laptop)</strong>, <strong>RHEL (server)</strong>, and <strong>Fedora Server (observatory)</strong> — into a unified ecosystem that mirrors the architecture of thought: sensing, reasoning, storing, and reflecting.</p>
+<p>At its core, FOWL orchestrates:</p>
 <ul>
-<li>Storage tiers (hot/warm/cold), LVM, rsync/borg</li>
-<li>Samba + ACLs; remote access; CI/CD for home lab</li>
-<li>Music stack (LilyPond, Python Euclidean rhythms)</li>
-<li>DSL module runner (AWS, Python, OpenAI for philosophical modules)</li>
-<li>Observatory layer (Grafana, home LAN)</li>
+<li><strong>DSL Inference Applications</strong> — for philosophical module computation (Aristotelian Biodome, Synthetic Naikan, etc.)</li>
+<li><strong>Linux/Python Automation</strong> — for local and cross-node orchestration</li>
+<li><strong>Backup &amp; Restoration Pipelines</strong> — Borg, rsync, and tiered LVM storage (hot/warm/cold)</li>
+<li><strong>Observatory Stack</strong> — Grafana and Prometheus for real-time introspection</li>
+<li><strong>Hybrid Orchestration</strong> — AWS/Azure integration for off-premise compute extension</li>
 </ul>
-<h2 id="nodes">Nodes<a class="headerlink" href="#nodes" title="Permanent link">&para;</a></h2>
-<ul>
-<li>🐦‍🔥  Observatory</li>
-<li>🐔 Storage &amp; Backup</li>
-<li>🐧Computation</li>
-<li>🦆 Development</li>
-</ul>
-<h2 id="current-fowl-architecture">Current FOWL Architecture<a class="headerlink" href="#current-fowl-architecture" title="Permanent link">&para;</a></h2>
+<p>FOWL functions as both a <strong>technical system</strong> and a <strong>conceptual instrument</strong> — a laboratory where automation and reflection converge into one operational philosophy.</p>
+<hr />
+<h2 id="areas-of-design">Areas of Design<a class="headerlink" href="#areas-of-design" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th><strong>Layer / Aspect</strong></th>
-<th><strong>Role / Function</strong></th>
-<th><strong>Host(s)</strong></th>
-<th><strong>Status</strong></th>
-<th><strong>Notes</strong></th>
+<th>Domain</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>🐦‍🔥<strong>a00 (Fedora server)</strong></td>
-<td><em>Observatory Node</em> — runs Prometheus (collector) and Grafana (visualization). Central metrics brain of the Lyceum ecosystem.</td>
-<td>192.168.1.x</td>
-<td>✅ Active</td>
-<td>SELinux adjusted for Grafana↔Prometheus. “Node Exporter Full” and “Prometheus 2.0 Stats” dashboards working.</td>
+<td><strong>Storage &amp; Backup</strong></td>
+<td>Tiered hot/warm/cold architecture using LVM, rsync, and Borg for integrity and recoverability.</td>
 </tr>
 <tr>
-<td>🐔<strong>m900 ( RHEL server)</strong></td>
-<td><em>Storage &amp; Backup Tier</em> — Borg + rsync tier; currently preparing for node_exporter service.</td>
-<td>192.168.1.x</td>
-<td>⚠️ Partial</td>
-<td>Metrics exporter not yet responding on 9100; firewall &amp; user setup pending.</td>
+<td><strong>Automation</strong></td>
+<td>Linux and Python-based workflows for SSH, systemd, CI/CD, and multi-node orchestration.</td>
 </tr>
 <tr>
-<td>🐧<strong>g16 (Ubuntu desktop)</strong></td>
-<td><em>Computation Node</em> — GPU / AI inference and DSL experiments.</td>
-<td>192.168.1.x</td>
-<td>✅ Active</td>
-<td>Node exporter connected and visible on Grafana. Serves as the main AI/ML execution node.</td>
+<td><strong>AI &amp; Inference</strong></td>
+<td>Local and remote DSL Runner apps operating on Ollama, OpenAI, or custom inference engines.</td>
 </tr>
 <tr>
-<td>🦆<strong>e14 (Fedora laptop)</strong></td>
-<td><em>Development Node</em> — code editing, Python + DSL integration; handles local builds and CI staging.</td>
-<td>192.168.1.x</td>
-<td>✅ Active</td>
-<td>Node exporter connected. Acts as dev and local CI/CD workstation.</td>
+<td><strong>Observability</strong></td>
+<td>Grafana + Prometheus stack as the “reflective layer,” observing all operational states.</td>
 </tr>
 <tr>
-<td><strong>iPad Pro</strong></td>
-<td><em>Control / Visualization Surface</em> — remote Grafana access, status viewing.</td>
-<td>Dynamic (client)</td>
-<td>✅ Active</td>
-<td>Accesses Grafana dashboard via LAN. No telemetry agent (view-only).</td>
+<td><strong>Hybrid Cloud</strong></td>
+<td>Integration points with AWS and Azure for flexible compute allocation and external data flow.</td>
 </tr>
 <tr>
-<td><strong>Network Infrastructure</strong></td>
-<td><em>LAN Backbone</em> — 192.168.1.0/24 subnet; static IP mapping per node.</td>
-<td>Home LAN</td>
-<td>✅ Stable</td>
-<td>Prometheus scrapes via IP:9100; firewall tuned per host; no mTLS yet.</td>
-</tr>
-<tr>
-<td><strong>Monitoring Stack</strong></td>
-<td><em>Prometheus + Grafana</em> — central observability + visualization framework.</td>
-<td>a00</td>
-<td>✅ Operational</td>
-<td>15s scrape interval; dashboards imported (IDs 1860, 3662). SELinux and port labeling complete.</td>
-</tr>
-<tr>
-<td><strong>Philosophical Layer (Vault)</strong></td>
-<td><em>Knowledge Layer</em> — Observation Reports, Aristotelian DSLs, philosophical reflection data.</td>
-<td>Lyceum Vault (GitHub + Obsidian)</td>
-<td>✅ Active</td>
-<td>Not yet annotated into Grafana timelines; forms conceptual input for Reflexivity Stage II.</td>
-</tr>
-<tr>
-<td><strong>Security Context</strong></td>
-<td><em>Access Control &amp; Policy</em> — SELinux, systemd hardening, SSH keys, firewall rules.</td>
-<td>All nodes</td>
-<td>✅ Tightened</td>
-<td>SELinux boolean for Grafana enabled; Prometheus port relabeled to <code>http_port_t</code>.</td>
-</tr>
-<tr>
-<td><strong>Next Integration Target</strong></td>
-<td><em>Unified Reflexive Loop</em> — correlate Observation Reports with system metrics.</td>
-<td>Cross-system</td>
-<td>🚧 Planned</td>
-<td>Requires annotation layer (Grafana API or Loki) and m900 exporter fix.</td>
+<td><strong>Creative Layer</strong></td>
+<td>Music stack using LilyPond and Euclidean rhythm algorithms; sonic analogues of system logic.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
-<p>See related guides in <strong>Notes</strong>.</p>
+<hr />
+<h2 id="node-roles">Node Roles<a class="headerlink" href="#node-roles" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Role</th>
+<th>Host OS</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🐦‍🔥 <strong>a00 (Fedora Server)</strong></td>
+<td><em>Observatory Node</em> — central Grafana &amp; Prometheus metrics collector.</td>
+<td>Fedora Server</td>
+<td>✅ Active</td>
+<td>Dashboards operational (“Node Exporter Full”, “Prometheus 2.0 Stats”).</td>
+</tr>
+<tr>
+<td>🐔 <strong>m900 (RHEL Server)</strong></td>
+<td><em>Storage &amp; Backup Tier</em> — Borg + rsync layer with SELinux tuning.</td>
+<td>RHEL</td>
+<td>⚠️ Partial</td>
+<td>Node exporter pending (firewall tuning).</td>
+</tr>
+<tr>
+<td>🐧 <strong>g16 (Ubuntu Desktop)</strong></td>
+<td><em>Computation Node</em> — GPU inference (Ollama + CUDA) and DSL execution.</td>
+<td>Ubuntu</td>
+<td>✅ Active</td>
+<td>AI/ML and Reflective Computing engine.</td>
+</tr>
+<tr>
+<td>🦆 <strong>e14 (Fedora Laptop)</strong></td>
+<td><em>Development Node</em> — CI/CD staging and Python DSL editing.</td>
+<td>Fedora KDE</td>
+<td>✅ Active</td>
+<td>Local build + sync environment.</td>
+</tr>
+<tr>
+<td><strong>iPad Pro</strong></td>
+<td><em>Control Surface</em> — remote Grafana access, monitoring interface.</td>
+<td>iPadOS</td>
+<td>✅ Active</td>
+<td>Visualization only (no telemetry agent).</td>
+</tr>
+<tr>
+<td><strong>LAN Backbone</strong></td>
+<td><em>Network Fabric</em> — static 192.168.1.0/24 mapping across all hosts.</td>
+<td>—</td>
+<td>✅ Stable</td>
+<td>Scraping via Prometheus ports (9100/tcp).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="monitoring-security-context">Monitoring &amp; Security Context<a class="headerlink" href="#monitoring-security-context" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Prometheus</strong> scrapes metrics every 15 s from all nodes.</li>
+<li><strong>Grafana</strong> dashboards imported (IDs 1860, 3662).</li>
+<li><strong>SELinux</strong> ports relabeled (<code>http_port_t</code> for Prometheus/Grafana).</li>
+<li><strong>SSH access</strong> restricted via key-pair auth only; root login disabled.</li>
+<li><strong>Systemd units</strong> handle periodic backups and exporter health checks.</li>
+</ul>
+<hr />
+<h2 id="integration-roadmap">Integration Roadmap<a class="headerlink" href="#integration-roadmap" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Goal</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>I. Metric Harmony</strong></td>
+<td>Ensure consistent node_exporter data from all nodes.</td>
+<td>In progress; m900 pending.</td>
+</tr>
+<tr>
+<td><strong>II. Reflexive Correlation</strong></td>
+<td>Link Observation Reports (Lyceum Vault) to Grafana timelines.</td>
+<td>Planned via Grafana Annotations API or Loki.</td>
+</tr>
+<tr>
+<td><strong>III. LLM Integration</strong></td>
+<td>Extend DSL Runner to query local Ollama (Llama 3, Gemma 2).</td>
+<td>Prototype ready on g16.</td>
+</tr>
+<tr>
+<td><strong>IV. Cloud Sync</strong></td>
+<td>Automate cross-tier replication to AWS/Azure buckets.</td>
+<td>Design stage.</td>
+</tr>
+<tr>
+<td><strong>V. Reflexivity 2.0</strong></td>
+<td>Full loop: observation → automation → reflection → philosophical insight.</td>
+<td>Long-term direction.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="philosophical-context">Philosophical Context<a class="headerlink" href="#philosophical-context" title="Permanent link">&para;</a></h2>
+<p>FOWL operationalizes the <strong>Philosophy of Systems</strong> — a model where infrastructure itself becomes a reflective medium.
+Each node, process, and metric embodies a part of an Aristotelian structure:</p>
+<table>
+<thead>
+<tr>
+<th>Cause</th>
+<th>Layer</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Material</strong></td>
+<td>Hardware &amp; OS</td>
+<td>NVMe tiers, RHEL kernel, storage volumes</td>
+</tr>
+<tr>
+<td><strong>Formal</strong></td>
+<td>Configuration &amp; Design</td>
+<td>DSL schemas, YAML modules, orchestration scripts</td>
+</tr>
+<tr>
+<td><strong>Efficient</strong></td>
+<td>Agents &amp; Processes</td>
+<td>Cron, rsync, Grafana exporters, LLM backends</td>
+</tr>
+<tr>
+<td><strong>Final</strong></td>
+<td>Telos / Purpose</td>
+<td>Self-observation and conceptual integration</td>
+</tr>
+</tbody>
+</table>
+<p>Thus, FOWL is not just a system — it’s an <em>epistemic mirror</em> through which the act of computing reveals its own philosophical structure.</p>
+<hr />
 
 
 
