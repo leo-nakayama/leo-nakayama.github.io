@@ -1,0 +1,31 @@
+/* Prefer JP-capable fonts + better readability for mixed Latin/JP text */
+:root {
+  --jp-fonts: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic Medium",
+              "Yu Gothic", "Meiryo", system-ui, -apple-system, Segoe UI,
+              Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Body text */
+.md-typeset {
+  font-family: var(--jp-fonts);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings balance line breaks a bit */
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+  letter-spacing: 0.02em;
+}
+
+/* Avoid awkward breaks for JP text while allowing wrapping */
+.md-typeset p, .md-typeset li {
+  word-break: keep-all;   /* nicer for CJK */
+  overflow-wrap: anywhere;
+}
+
+/* Code font stays monospaced; let it breathe slightly */
+.md-typeset code, .md-typeset pre code {
+  font-feature-settings: "liga" 0, "calt" 0;
+  line-height: 1.5;
+}
