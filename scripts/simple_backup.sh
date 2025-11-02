@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # simple_backup.sh
-# 1) Rsync-mirrors repo to /mnt/share (excluding .git and site/)
+# 1) Rsync-mirrors repo to /mnt/share (excluding .git/ , site/, and .venv/ )
 set -euo pipefail
 
 # --- Config ---
@@ -21,7 +21,7 @@ cd "$SRC_DIR"
 # --- 1) Rsync backup to Samba share ---
 echo "→ Backing up to $DEST_DIR (rsync)…"
 LOG="/tmp/rsync_lyceumvault_$(date +%F_%H%M%S).log"
-RSYNC_FLAGS="-avh --delete --progress --exclude .git/ --exclude site/"
+RSYNC_FLAGS="-avh --delete --progress --exclude .git/ --exclude site/ --exclude .venv/"
 
 rsync $RSYNC_FLAGS "$SRC_DIR"/ "$DEST_DIR"/ | tee "$LOG"
 

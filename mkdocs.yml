@@ -75,5 +75,8 @@ markdown_extensions:
 
 extra:
   social:
+  - icon: material/linkedin
+    link: https://www.linkedin.com/in/leonakayama/
   - icon: material/github
     link: https://github.com/leo-nakayama/
+
