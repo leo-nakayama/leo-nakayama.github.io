@@ -1,0 +1,7 @@
+/* Increase left indent of nested items */
+.md-nav__item .md-nav__link { padding-left: .5rem; }
+.md-nav__item .md-nav__item .md-nav__link { padding-left: 1.25rem; }
+.md-nav__item .md-nav__item .md-nav__item .md-nav__link { padding-left: 2rem; }
+
+/* Optional: slightly bolder section labels */
+.md-nav__title { font-weight: 600; }
