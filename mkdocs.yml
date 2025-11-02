@@ -1,5 +1,6 @@
 site_name: Leo's Lyceum Vault
 site_url: https://leo-nakayama.github.io/
+
 theme:
   name: material
   features:
@@ -12,10 +13,24 @@ theme:
     - scheme: slate
       primary: indigo
       accent: indigo
+
 extra_css:
   - css/nav-tweaks.css
+  - css/jp-typography.css
+
 plugins:
   - search
+
+# SEO: let crawlers know there’s a JP section too (hreflang links)
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: 日本語
+      link: /ja/
+      lang: ja
+
 nav:
 - Home: index.md
 - Reflective Computing:
@@ -41,12 +56,23 @@ nav:
   - GitHub Action vs AWS CI/CD: notes/github-actions-vs-aws-cicd.md
 - Meta:
   - Content Update Protocol: meta/content-update-protocol.md
+
+# 👇 New Japanese Section
+- 日本語:
+  - ホーム: ja/index.md
+  - 考察:
+      - Reflective Computing概要: ja/essays/reflective-computing.md
+      - 日本が輸出する新たな知財: ja/essays/philosophical-export.md
+  - Observation Report:
+      - 日本語版レポート一覧: ja/reports/index.md
+
 markdown_extensions:
   - admonition
   - footnotes
   - tables
   - toc:
       permalink: true
+
 extra:
   social:
   - icon: material/github
