@@ -3,10 +3,19 @@ site_url: https://leo-nakayama.github.io/
 theme:
   name: material
   features:
-  - navigation.sections
-  - navigation.expand
-  - toc.integrate
-  - content.code.copyk
+    - navigation.sections     # group top-level sections in the sidebar
+    - navigation.expand       # expand the full tree on load
+    - navigation.path         # show breadcrumb path
+    - navigation.tabs         # optional: put top-level groups as tabs
+    - toc.integrate         # optional: move page ToC into the left nav (can feel “denser”)
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+extra_css:
+  - css/nav-tweaks.css
+plugins:
+  - search
 nav:
 - Home: index.md
 - Reflective Computing:
@@ -16,6 +25,7 @@ nav:
   - Dialectic Modes: reflective-computing/dialectic-modes.md
   - Manifesto: reflective-computing/reflective-computing-manifesto.md
 - Projects:
+  - Relational Aesthetics Consulting Blueprint: projects/relational-aesthetics-consulting-blueprint.md
   - FOWL: projects/FOWL.md
   - DSL Inference App: projects/dsl-inference-app.md
 - Notes:
