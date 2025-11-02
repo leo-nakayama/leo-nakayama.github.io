@@ -29,3 +29,9 @@ title: Observation Report 日本語版
 
 これらの観察報告は、英語版のVaultで公開されている内容と対応しつつ、  
 **日本語文脈で再構築されたもの**です。
+
+---
+<div align="right">
+中山玲緒奈
+</div>
+

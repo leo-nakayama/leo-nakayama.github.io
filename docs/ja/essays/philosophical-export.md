@@ -31,3 +31,8 @@ FOWL（Fully Operational Wisdom and Logic）を通じて、
 このページでは、Reflective Computing と並行して  
 「哲学的知財としての日本文化」の発信を試みていきます。
 
+---
+<div align="right">
+中山玲緒奈
+</div>
+

@@ -34,3 +34,9 @@ Reflective Computing は、次の4つの哲学的層から構成されます。
 ---
 
 このページでは、今後「Reflective Improvisation」「Reflective Composition」などの派生概念も日本語で整理していきます。
+
+---
+<div align="right">
+中山玲緒奈
+</div>
+
