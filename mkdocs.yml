@@ -44,6 +44,7 @@ nav:
   - FOWL: projects/FOWL.md
   - DSL Inference App: projects/dsl-inference-app.md
 - Notes:
+  - Kokutai from Edo to Now: notes/Kokutai-from-edo-to-now.md
   - Psychological Economy of Abenomics: notes/Psychological-Economy-of-Abenomics.md
   - Configuring SSH Key-based Authentication: notes/Configuring-SSH-Key-based-Authentication.md
   - Create Basic Python Environment: notes/Create-Basic-Python-Environment-then-start-from-red.md
