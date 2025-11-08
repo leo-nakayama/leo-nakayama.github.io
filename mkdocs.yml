@@ -67,6 +67,7 @@ nav:
       - ベノミクス的インフレ構造の継続: ja/essays/abenomics-inflation.md
   - Observation Report:
       - 日本語版レポート一覧: ja/reports/index.md
+      - アベノミクス的インフレ構造 - DSLレポート: ja/reports/abenomics-inflation-exec.md
 
 markdown_extensions:
   - admonition
