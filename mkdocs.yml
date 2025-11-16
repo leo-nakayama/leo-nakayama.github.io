@@ -8,7 +8,7 @@ theme:
     - navigation.expand       # expand the full tree on load
     - navigation.path         # show breadcrumb path
     - navigation.tabs         # optional: put top-level groups as tabs
-    - toc.integrate         # optional: move page ToC into the left nav (can feel “denser”)
+    - toc.integrate           # optional: move page ToC into the left nav (can feel “denser”)
   palette:
     - scheme: slate
       primary: indigo
