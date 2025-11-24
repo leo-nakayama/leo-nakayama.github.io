@@ -229,8 +229,6 @@ It is about building an *external cognitive architecture*:
 
 Once you learn this style, you can “think by code.”
 
-It is philosophical engineering —
-and exactly what the Lyceum Workbench was designed to host.
 
 ---
 <div align="right">
