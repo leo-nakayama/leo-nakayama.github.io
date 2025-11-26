@@ -10,7 +10,7 @@ theme:
     - navigation.tabs         # optional: put top-level groups as tabs
     - toc.integrate           # optional: move page ToC into the left nav (can feel “denser”)
   palette:
-    - scheme: slate
+    - scheme: default
       primary: indigo
       accent: indigo
 
