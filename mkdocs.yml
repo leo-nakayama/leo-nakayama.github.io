@@ -64,6 +64,7 @@ nav:
 - 日本語:
   - ホーム: ja/index.md
   - 考察:
+      - 文脈依存性の不一致と国家安全保障: ja/essays/high-context-and-low-context.md
       - Reflective Computing概要: ja/essays/reflective-computing.md
       - 構造的自己と経験的自己: ja/essays/ai-and-self.md
       - 隻手の声とAIの自己分離: ja/essays/sekishu-experiment.md
@@ -71,6 +72,7 @@ nav:
       - ベノミクス的インフレ構造の継続: ja/essays/abenomics-inflation.md
   - Observation Report:
       - 日本語版レポート一覧: ja/reports/index.md
+      - 高文脈文化と安全保障　DSLレポート: ja/reports/high-context-low-context-report.md
       - アベノミクス的インフレ構造 - DSLレポート: ja/reports/abenomics-inflation-exec.md
 
 markdown_extensions:
