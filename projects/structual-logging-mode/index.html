@@ -1,0 +1,2648 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://leo-nakayama.github.io/projects/structual-logging-mode/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Structural Logging Mode — Operational Manual - Leo's Lyceum Vault</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/nav-tweaks.css">
+    
+      <link rel="stylesheet" href="../../css/jp-typography.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#structural-logging-mode-operational-manual" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Leo&#39;s Lyceum Vault" class="md-header__button md-logo" aria-label="Leo's Lyceum Vault" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Leo's Lyceum Vault
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Structural Logging Mode — Operational Manual
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reflective-computing/" class="md-tabs__link">
+          
+  
+  
+  Reflective Computing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../relational-aesthetics-consulting-blueprint/" class="md-tabs__link">
+          
+  
+  
+  Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../high-context-intelligence/" class="md-tabs__link">
+          
+  
+  
+  High-Context Intelligence (HCCM)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../essays/how-to-start-fowl-playbook-coding/" class="md-tabs__link">
+          
+  
+  
+  Essays
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../notes/Kokutai-from-edo-to-now/" class="md-tabs__link">
+          
+  
+  
+  Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../meta/content-update-protocol/" class="md-tabs__link">
+          
+  
+  
+  Meta
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ja/" class="md-tabs__link">
+          
+  
+  
+  日本語
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Leo&#39;s Lyceum Vault" class="md-nav__button md-logo" aria-label="Leo's Lyceum Vault" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Leo's Lyceum Vault
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflective Computing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reflective Computing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reflective-computing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reflective-computing/synthetic-naikan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Synthetic Naikan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reflective-computing/aristotelian-biodome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aristotelian Biodome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reflective-computing/dialectic-modes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dialectic Modes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reflective-computing/reflective-computing-manifesto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manifesto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relational-aesthetics-consulting-blueprint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relational Aesthetics Consulting Blueprint
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FOWL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FOWL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dsl-inference-app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSL Inference App
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    High-Context Intelligence (HCCM)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    High-Context Intelligence (HCCM)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../high-context-intelligence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../high-context-intelligence/chapter1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../high-context-intelligence/chapter2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../high-context-intelligence/chapter3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../high-context-intelligence/chapter4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../high-context-intelligence/chapter5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../high-context-intelligence/chapter6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../high-context-intelligence/chapter7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Essays
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Essays
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../essays/how-to-start-fowl-playbook-coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to Get Started With FOWL Playbook Coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../essays/high-context-information-hygiene/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    High-Context Information Hygiene
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/Kokutai-from-edo-to-now/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kokutai from Edo to Now
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/Psychological-Economy-of-Abenomics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Psychological Economy of Abenomics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/Configuring-SSH-Key-based-Authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuring SSH Key-based Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/Create-Basic-Python-Environment-then-start-from-red/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Basic Python Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/console-terminal-shell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Console, Terminal, Shell, Job, and Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/Fedora_MAC_Address_Randomization_Issue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fodeora MAC Address Randomization Issue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/mermaid-recovery-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mermaid Recovery Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/presonus-cancel-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PreSonus Cancel Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/fcitx5-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fcitx5 Setup (KDE/Ubuntu)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/fedora-samba-permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fedora Samba Permissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/github-actions-vs-aws-cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub Action vs AWS CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Meta
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../meta/content-update-protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Content Update Protocol
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    日本語
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    日本語
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ja/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ホーム
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    考察
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    考察
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ja/essays/high-context-and-low-context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    文脈依存性の不一致と国家安全保障
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ja/essays/reflective-computing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflective Computing概要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ja/essays/ai-and-self/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    構造的自己と経験的自己
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ja/essays/sekishu-experiment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    隻手の声とAIの自己分離
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ja/essays/philosophical-export/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    日本が輸出する新たな知財
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ja/essays/abenomics-inflation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ベノミクス的インフレ構造の継続
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Observation Report
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Observation Report
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ja/reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    日本語版レポート一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ja/reports/high-context-low-context-report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    高文脈文化と安全保障　DSLレポート
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ja/reports/abenomics-inflation-exec/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    アベノミクス的インフレ構造 - DSLレポート
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ノート
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ノート
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ja/notes/high-context-crisis-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    高文脈文化の誤読危機
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="structural-logging-mode-operational-manual"><strong>Structural Logging Mode — Operational Manual</strong><a class="headerlink" href="#structural-logging-mode-operational-manual" title="Permanent link">&para;</a></h1>
+<h3 id="diplomacy-financial-stability-edition-fowl-v10"><em>Diplomacy &amp; Financial Stability Edition (FOWL v1.0)</em><a class="headerlink" href="#diplomacy-financial-stability-edition-fowl-v10" title="Permanent link">&para;</a></h3>
+<p><em>By Leo Nakayama / Lyceum Vault</em></p>
+<hr />
+<h2 id="page-1-purpose-and-philosophy"><strong>Page 1 — Purpose and Philosophy</strong><a class="headerlink" href="#page-1-purpose-and-philosophy" title="Permanent link">&para;</a></h2>
+<p>Diplomatic crises do not escalate through dramatic events first.
+They escalate through <strong>structural shifts</strong>:</p>
+<ul>
+<li>changes in diplomatic vocabulary</li>
+<li>timing asymmetry</li>
+<li>narrative alignment across actors</li>
+<li>market reactions</li>
+<li>silence where communication should exist</li>
+<li>domestic rhetoric hardening</li>
+</ul>
+<p>Traditional news consumption cannot detect these shifts because it delivers <em>stories</em>, not <em>signals</em>.</p>
+<p><strong>Structural Logging Mode</strong> solves this by enforcing:</p>
+<ul>
+<li>fact-only recording</li>
+<li>narrow, high-quality information pipelines</li>
+<li>multi-category pattern extraction</li>
+<li>auto-escalation to the correct B-stage</li>
+<li>mental hygiene under stress</li>
+</ul>
+<p>This mode is inspired by:</p>
+<ul>
+<li>Finland’s “Warning Signal Model”</li>
+<li>U.S./China diplomatic briefings</li>
+<li>Military SIGINT discipline</li>
+<li>AI negative reinforcement avoidance</li>
+<li>FOWL’s four-cause inference framework</li>
+</ul>
+<hr />
+<h2 id="page-2-overview-of-the-structural-layer"><strong>Page 2 — Overview of the Structural Layer</strong><a class="headerlink" href="#page-2-overview-of-the-structural-layer" title="Permanent link">&para;</a></h2>
+<p>Structural Logging Mode is built on three layers:</p>
+<ol>
+<li>
+<p><strong>Event Layer（生データ）</strong>
+   Minimal factual logs with zero interpretation.</p>
+</li>
+<li>
+<p><strong>Signal Layer（パターン抽出）</strong>
+   Only events that repeat (2回以上) become signals.</p>
+</li>
+<li>
+<p><strong>Shift Layer（ステージ変化）</strong>
+   When signals align across categories, a structural shift occurs:</p>
+</li>
+<li>
+<p>B1 → B2</p>
+</li>
+<li>B2 → B3-Low → Mid → High</li>
+<li>→ Stage C (Action Phase)</li>
+</ol>
+<p>No narrative is ever used.
+No feelings.
+No speculation.
+Only structure.</p>
+<hr />
+<h2 id="page-3-categories-observation-domains"><strong>Page 3 — Categories &amp; Observation Domains</strong><a class="headerlink" href="#page-3-categories-observation-domains" title="Permanent link">&para;</a></h2>
+<p>Structural Logging Mode observes <strong>four categories</strong>:</p>
+<h3 id="1-diplomacy">1) Diplomacy（最重要）<a class="headerlink" href="#1-diplomacy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>China MFA</li>
+<li>Xinhua</li>
+<li>US State Department</li>
+<li>White House</li>
+<li>U.S. Embassy Tokyo</li>
+<li>MOFA Japan（外務省）</li>
+</ul>
+<p><strong>Focus:</strong>
+語彙・強度・繰り返し・沈黙・タイミング</p>
+<hr />
+<h3 id="2-domestic-rhetoric">2) Domestic Rhetoric<a class="headerlink" href="#2-domestic-rhetoric" title="Permanent link">&para;</a></h3>
+<ul>
+<li>地上波テレビ</li>
+<li>ネット世論</li>
+<li>政府広報</li>
+<li>有力政治家の発言</li>
+<li>メディアの“異常な一致”</li>
+</ul>
+<p><strong>Focus:</strong>
+誤解の放置
+ナラティブの硬直化
+高文脈文化の暴走（反X＝反日）</p>
+<hr />
+<h3 id="3-markets">3) Markets<a class="headerlink" href="#3-markets" title="Permanent link">&para;</a></h3>
+<ul>
+<li>USD/JPY</li>
+<li>JGB / U.S. Treasuries</li>
+<li>VIX</li>
+<li>CDS（Sovereign）</li>
+<li>海外投資家のレポート</li>
+</ul>
+<p><strong>Focus:</strong>
+市場は最も正直
+外交の嘘は市場では通用しない</p>
+<hr />
+<h3 id="4-military-signals">4) Military Signals<a class="headerlink" href="#4-military-signals" title="Permanent link">&para;</a></h3>
+<ul>
+<li>航空識別圏侵入（ADIZ）</li>
+<li>演習の位置・形式</li>
+<li>周辺海域の異常接近</li>
+<li>無人機・偵察機の飛行ルート</li>
+</ul>
+<p><strong>Focus:</strong>
+実力行使の“前動作”</p>
+<hr />
+<h2 id="page-4-logging-rules"><strong>Page 4 — Logging Rules</strong><a class="headerlink" href="#page-4-logging-rules" title="Permanent link">&para;</a></h2>
+<h3 id="rule-1-log-only-structure"><strong>Rule 1 — Log only structure</strong><a class="headerlink" href="#rule-1-log-only-structure" title="Permanent link">&para;</a></h3>
+<p>No adjectives.
+No assumptions.
+No “意味はこうだ”。
+No Twitterの反応。
+No コメント欄。</p>
+<p>例（正しいログ）</p>
+<pre><code>China MFA used “necessary measures” wording.  
+</code></pre>
+<p>例（誤ログ）</p>
+<pre><code>中国が完全にキレた。
+</code></pre>
+<hr />
+<h3 id="rule-2-use-the-template"><strong>Rule 2 — Use the template</strong><a class="headerlink" href="#rule-2-use-the-template" title="Permanent link">&para;</a></h3>
+<pre><code class="language-yaml">- date: YYYY-MM-DD
+  actor:
+  category:
+  content: &gt;
+    事実だけを記録（1〜2行）
+</code></pre>
+<hr />
+<h3 id="rule-3-no-retroactive-editing"><strong>Rule 3 — No retroactive editing</strong><a class="headerlink" href="#rule-3-no-retroactive-editing" title="Permanent link">&para;</a></h3>
+<p>ログは遡って修正しない。
+因果は“記録順”でしか発見できない。</p>
+<hr />
+<h3 id="rule-4-event-signal"><strong>Rule 4 — Event ≠ Signal</strong><a class="headerlink" href="#rule-4-event-signal" title="Permanent link">&para;</a></h3>
+<p><strong>1回の出来事は必ずノイズ扱い。</strong></p>
+<hr />
+<h3 id="rule-5-only-repeated-events-become-signals"><strong>Rule 5 — Only repeated events become signals</strong><a class="headerlink" href="#rule-5-only-repeated-events-become-signals" title="Permanent link">&para;</a></h3>
+<p>2回以上の反復
+＋
+別カテゴリでも一致すると
+→ <strong>Structural Signal</strong> へ昇格</p>
+<hr />
+<h2 id="page-5-signal-layer"><strong>Page 5 — Signal Layer</strong><a class="headerlink" href="#page-5-signal-layer" title="Permanent link">&para;</a></h2>
+<p>例：</p>
+<pre><code>2025-11-24 China MFA: “necessary measures”
+2025-11-25 Global Times: “Japan dangerous actor”
+</code></pre>
+<p>→</p>
+<pre><code>Signal: ChinaToneShift = confirmed
+</code></pre>
+<p>Signals are meaningful only when:</p>
+<ul>
+<li>they repeat</li>
+<li>they escalate</li>
+<li>they spread across domains</li>
+</ul>
+<p>Signal types:</p>
+<ul>
+<li>ToneShift</li>
+<li>DiplomaticAsymmetry</li>
+<li>NarrativeConvergence</li>
+<li>MarketVolatilityCluster</li>
+<li>AllianceTemperatureDrop</li>
+</ul>
+<hr />
+<h2 id="page-6-shift-layer"><strong>Page 6 — Shift Layer（ステージ変化）</strong><a class="headerlink" href="#page-6-shift-layer" title="Permanent link">&para;</a></h2>
+<p>Stage shifts occur when signals align <strong>across categories</strong>:</p>
+<h3 id="b1-b2">B1 → B2<a class="headerlink" href="#b1-b2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>1 domain shows consistent negative direction</li>
+</ul>
+<h3 id="b2-b3-low">B2 → B3-Low<a class="headerlink" href="#b2-b3-low" title="Permanent link">&para;</a></h3>
+<ul>
+<li>2 domains align
+  (e.g., Diplomacy + Domestic)</li>
+</ul>
+<h3 id="b3-low-b3-mid">B3-Low → B3-Mid<a class="headerlink" href="#b3-low-b3-mid" title="Permanent link">&para;</a></h3>
+<ul>
+<li>3 domains align
+  (Diplomacy + Domestic + Markets)</li>
+</ul>
+<h3 id="b3-mid-b3-high">B3-Mid → B3-High<a class="headerlink" href="#b3-mid-b3-high" title="Permanent link">&para;</a></h3>
+<ul>
+<li>3 domains align + escalation in tone or pace</li>
+</ul>
+<h3 id="b3-high-c">B3-High → C<a class="headerlink" href="#b3-high-c" title="Permanent link">&para;</a></h3>
+<ul>
+<li>1 red trigger（単発で即C）</li>
+</ul>
+<hr />
+<h2 id="page-7-red-triggersstage-c-criteria"><strong>Page 7 — Red Triggers（Stage C Criteria）</strong><a class="headerlink" href="#page-7-red-triggersstage-c-criteria" title="Permanent link">&para;</a></h2>
+<p>どれか一つで Stage C</p>
+<ul>
+<li>U.S. Embassy Tokyo issues public concern</li>
+<li>China MFA uses semi-military terminology</li>
+<li>USD/JPY spikes past 165</li>
+<li>Think tanks publish coordinated warnings</li>
+<li>Japan escalates rhetoric without clarification</li>
+<li>Diplomatic rupture（沈黙→拒否→断絶）</li>
+</ul>
+<hr />
+<h2 id="page-8-sample-week-of-logging"><strong>Page 8 — Sample Week of Logging（例として実データを使用）</strong><a class="headerlink" href="#page-8-sample-week-of-logging" title="Permanent link">&para;</a></h2>
+<pre><code class="language-yaml">- date: 2025-11-22
+  actor: China Embassy Tokyo
+  category: diplomacy
+  content: &gt;
+    “UNSC approval not needed to attack Japan” posted.
+
+- date: 2025-11-24
+  actor: China MFA
+  category: diplomacy
+  content: &gt;
+    Used phrase “necessary measures”.
+
+- date: 2025-11-24
+  actor: Xi–Trump Call
+  category: diplomacy
+  content: &gt;
+    China publicly disclosed details; US silent.
+
+- date: 2025-11-26
+  actor: Japan PM Takaichi
+  category: domestic_rhetoric
+  content: &gt;
+    “言える範囲で答弁した” — new inconsistency.
+
+- date: 2025-11-27
+  actor: USD/JPY
+  category: markets
+  content: &gt;
+    Yen trades 157–158, market cautious.
+</code></pre>
+<p>Signals extracted:</p>
+<pre><code>ChinaToneShift
+DiplomaticAsymmetry
+DomesticHardening
+MarketCaution
+</code></pre>
+<p>Stage:</p>
+<pre><code>B3-Low（現在）
+</code></pre>
+<hr />
+<h2 id="page-9-mental-hygiene-protocol"><strong>Page 9 — Mental Hygiene Protocol</strong><a class="headerlink" href="#page-9-mental-hygiene-protocol" title="Permanent link">&para;</a></h2>
+<p>外交危機では、
+「構造 → 感情 → 混乱」
+ではなく
+「構造 → 構造 → 構造」
+で動く必要がある。</p>
+<p>対策：</p>
+<ol>
+<li>Yahooニュース禁止</li>
+<li>コメント欄禁止</li>
+<li>SNS速報禁止</li>
+<li>構造データのみ閲覧</li>
+<li>ログが2つなければ“ノイズ”認定</li>
+<li>日々の判断はゼロ。週1回だけ評価</li>
+<li>他者への共有は“構造だけ”</li>
+</ol>
+<p>これで panic-resistant になる。</p>
+<hr />
+<h2 id="page-10-closing"><strong>Page 10 — Closing</strong><a class="headerlink" href="#page-10-closing" title="Permanent link">&para;</a></h2>
+<p>Structural Logging Mode is not a crisis tool.
+It is a <strong>clarity tool</strong>.</p>
+<p>When used correctly, it prevents:</p>
+<ul>
+<li>panic</li>
+<li>narrative contamination</li>
+<li>hallucination
+  -過剰反応</li>
+<li>domestic rhetoricへの巻き込まれ</li>
+</ul>
+<p>思考がこのモードと自然に一致することで、
+“外交版構造ログ”は完璧機能。</p>
+<hr />
+<h1 id="_1">=====================================<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="4-fowl-observation-report-structural-logging">✅ <strong>(4) FOWL 実行例 — Observation Report × Structural Logging</strong><a class="headerlink" href="#4-fowl-observation-report-structural-logging" title="Permanent link">&para;</a></h1>
+<h1 id="_2">=====================================<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<p>実際のログ　（高市発言 → 中国反応 → Xi–Trump → domestic hardening）を
+<strong>FOWL × StructuralLogging</strong> の正式フォーマットで示す。</p>
+<hr />
+<h2 id="fowl-observation-reportstructural-logging-mode"><strong>FOWL Observation Report（Structural Logging Mode）</strong><a class="headerlink" href="#fowl-observation-reportstructural-logging-mode" title="Permanent link">&para;</a></h2>
+<pre><code>[Module] FOWL-StructuralLogging v1.0  
+[Function] Structural Event → Signal → Shift → Stage Assessment  
+[InputData]  
+  High-frequency diplomatic events  
+  PM Takaichi’s statements  
+  China MFA tone escalation  
+  Xi–Trump call  
+  Market response (JPY)  
+
+[Transformations Used]  
+  - O_logEvent  
+  - O_extractSignal  
+  - O_detectShift  
+  - O_stageUpdate  
+  - O_blackoutNoise  
+</code></pre>
+<hr />
+<h3 id="event-logs"><strong>[Event Logs]</strong><a class="headerlink" href="#event-logs" title="Permanent link">&para;</a></h3>
+<pre><code class="language-yaml">- 2025-11-22 China Embassy Tokyo:
+  “UNSC approval not needed to attack Japan”.
+
+- 2025-11-24 China MFA:
+  Used escalated wording “necessary measures”.
+
+- 2025-11-24 Xi–Trump call:
+  China released details; US silent (asymmetry).
+
+- 2025-11-26 PM Takaichi:
+  “言える範囲で答弁した” — new inconsistency.
+
+- 2025-11-27 Market:
+  USD/JPY stable around 157–158, caution persistent.
+</code></pre>
+<hr />
+<h3 id="signals-extracted"><strong>[Signals Extracted]</strong><a class="headerlink" href="#signals-extracted" title="Permanent link">&para;</a></h3>
+<pre><code class="language-yaml">- ChinaToneShift:
+    evidence: 
+      - MFA “necessary measures”
+      - Embassy “attack possible without UNSC”
+    status: confirmed
+
+- DiplomaticAsymmetry:
+    evidence:
+      - Xi–Trump call details unilateral
+      - US silence
+    status: confirmed
+
+- DomesticHardening:
+    evidence:
+      - “反高市＝反日” narrative spreading
+      - PM’s “言える範囲” justification
+    status: confirmed
+
+- MarketCaution:
+    evidence:
+      - Yen stalls at 157–158
+    status: moderate
+</code></pre>
+<hr />
+<h3 id="detected-structural-shift"><strong>[Detected Structural Shift]</strong><a class="headerlink" href="#detected-structural-shift" title="Permanent link">&para;</a></h3>
+<p>3 major domains showed alignment:</p>
+<ul>
+<li>Diplomacy → YES</li>
+<li>Domestic Rhetoric → YES</li>
+<li>Markets → YES (early caution)</li>
+</ul>
+<p>→ <strong>Shift = B3-Low (consolidating)</strong></p>
+<hr />
+<h3 id="stage-assessment"><strong>[Stage Assessment]</strong><a class="headerlink" href="#stage-assessment" title="Permanent link">&para;</a></h3>
+<pre><code>Current Stage: B3-Low  
+Direction: Toward B3-Mid (if 1–2 more signals appear)
+Stability: Fragile  
+Policy Implication: Complete relocation backup in 1–3 months
+</code></pre>
+<hr />
+<h3 id="micro-playbook"><strong>[Micro-Playbook]</strong><a class="headerlink" href="#micro-playbook" title="Permanent link">&para;</a></h3>
+<pre><code>1. Log daily MFA/State Dept/JPY.  
+2. Extract signals weekly only.  
+3. Update Trigger Sheet every Sunday.  
+4. No news commentary consumption.  
+5. Weekly briefing: “structure only”.  
+6. Prepare B3-Mid response plan in advance.  
+</code></pre>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/leonakayama/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/leo-nakayama/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.path", "navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
