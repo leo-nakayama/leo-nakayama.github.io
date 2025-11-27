@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://leo-nakayama.github.io/sitemap.xml
+Sitemap: https://leo-nakayama.github.io/sitemap-lyceum.xml
