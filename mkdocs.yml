@@ -40,8 +40,10 @@ nav:
   - Dialectic Modes: reflective-computing/dialectic-modes.md
   - Manifesto: reflective-computing/reflective-computing-manifesto.md
 - Projects:
-  - Relational Aesthetics Consulting Blueprint: projects/relational-aesthetics-consulting-blueprint.md
   - FOWL: projects/FOWL.md
+  - Reflective Exchange Authoring: projects/reflective-exchange-authoring.md
+  - Structural Logging Mode: projects/structual-logging-mode.md
+  - Relational Aesthetics Consulting Blueprint: projects/relational-aesthetics-consulting-blueprint.md
   - DSL Inference App: projects/dsl-inference-app.md
 - High-Context Intelligence (HCCM):
     - Overview: high-context-intelligence/index.md
