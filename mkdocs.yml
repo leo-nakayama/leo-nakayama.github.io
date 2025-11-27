@@ -54,6 +54,7 @@ nav:
     - Chapter 6: high-context-intelligence/chapter6.md
     - Chapter 7: high-context-intelligence/chapter7.md
 - Essays:
+  - AI as the New Kokutai: essays/ai-as-the-new-kokutai.md
   - How to Get Started With FOWL Playbook Coding: essays/how-to-start-fowl-playbook-coding.md
   - High-Context Information Hygiene: essays/high-context-information-hygiene.md
 - Notes:
@@ -76,6 +77,7 @@ nav:
 - 日本語:
   - ホーム: ja/index.md
   - 考察:
+      - AIは新しい国体か: ja/essays/ai-as-the-new-kokutai-ja.md
       - 文脈依存性の不一致と国家安全保障: ja/essays/high-context-and-low-context.md
       - Reflective Computing概要: ja/essays/reflective-computing.md
       - 構造的自己と経験的自己: ja/essays/ai-and-self.md
