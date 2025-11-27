@@ -54,6 +54,7 @@ nav:
     - Chapter 7: high-context-intelligence/chapter7.md
 - Essays:
   - How to Get Started With FOWL Playbook Coding: essays/how-to-start-fowl-playbook-coding.md
+  - High-Context Information Hygiene: essays/high-context-information-hygiene.md
 - Notes:
   - Kokutai from Edo to Now: notes/Kokutai-from-edo-to-now.md
   - Psychological Economy of Abenomics: notes/Psychological-Economy-of-Abenomics.md
@@ -100,3 +101,5 @@ extra:
   - icon: material/github
     link: https://github.com/leo-nakayama/
 
+hooks:
+  - scripts/post_build.py
