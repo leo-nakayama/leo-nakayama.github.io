@@ -104,6 +104,9 @@ extra:
     link: https://www.linkedin.com/in/leonakayama/
   - icon: material/github
     link: https://github.com/leo-nakayama/
+  analytics:
+    provider: google
+    property: G-CL0224N2KM
 
 hooks:
   - scripts/post_build.py
