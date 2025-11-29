@@ -4,7 +4,7 @@
   <img src="assets/social-preview.png" alt="Leo's Lyceum Vault Banner" width="800">
 </p>
 
-*A vault of FOWL (Fully Operational Wisdom and Logic) based on Reflective Computing, and High-Context Intelligence.*
+*A vault of FOWL (Fully Operational Wisdom and Logic) based on Reflective Computing and High-Context Intelligence.*
 
 **Website:** [https://leo-nakayama.github.io/](https://leo-nakayama.github.io/)
 
