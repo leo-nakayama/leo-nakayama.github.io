@@ -4,7 +4,7 @@
   <img src="assets/social-preview.png" alt="Leo's Lyceum Vault Banner" width="800">
 </p>
 
-*A Digital Garden for Reflective Computing, High-Context Intelligence, and FOWL.*
+*A vault of FOWL (Fully Operational Wisdom and Logic) based on Reflective Computing, and High-Context Intelligence.*
 
 **Website:** [https://leo-nakayama.github.io/](https://leo-nakayama.github.io/)
 
@@ -13,7 +13,7 @@ Leo’s Lyceum Vault is an evolving knowledge ecosystem exploring how humans thi
 This Vault serves as both:
 
 * a **public knowledge library**, and
-* a **research notebook for developing new reasoning frameworks**, including FOWL (“Fact–Observation–Why Logic”), Reflective Computing, Synthetic Naikan, and High-Context Intelligence.
+* a **research notebook for developing new reasoning frameworks**, including FOWL (“Fully Operational Wisdom and Logic”), Reflective Computing, Synthetic Naikan, and High-Context Intelligence.
 
 ---
 
