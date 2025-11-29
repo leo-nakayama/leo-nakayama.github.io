@@ -169,9 +169,3 @@ Website builds via GitHub Actions and deploys to GitHub Pages.
 Unless otherwise noted, content is released under the **CC BY-NC-SA 4.0** license.
 
 ---
-
-If you’d like, I can also generate:
-
-* A **custom social preview image** (banner) designed exactly for GitHub
-* A smaller “lite” README for your repo
-* A **GitHub Topics list** you should tag (for discoverability)
