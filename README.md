@@ -1,5 +1,9 @@
 # **Leo’s Lyceum Vault**
 
+<p align="center">
+  <img src="assets/social-preview.png" alt="Leo's Lyceum Vault Banner" width="800">
+</p>
+
 *A Digital Garden for Reflective Computing, High-Context Intelligence, and FOWL.*
 
 **Website:** [https://leo-nakayama.github.io/](https://leo-nakayama.github.io/)
