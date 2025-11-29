@@ -1,0 +1,13 @@
+module: JapaneseRitualChaos
+version: "1.0"
+
+axioms:
+  - id: RC1
+    description: "Ritualized chaos periodically resets organizational equilibrium."
+  - id: RC2
+    description: "Sudden reversals (chabudai-gaeshi) are functional, not failures."
+
+operators:
+  - id: O_detect_ritual
+    description: "Identify ritualized deviations from plan."
+

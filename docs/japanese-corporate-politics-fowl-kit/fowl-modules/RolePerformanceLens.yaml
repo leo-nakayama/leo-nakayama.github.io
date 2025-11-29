@@ -1,0 +1,13 @@
+module: RolePerformanceLens
+version: "1.0"
+
+axioms:
+  - id: RP1
+    description: "Success depends on role-performance, not rationality."
+  - id: RP2
+    description: "Deviating from expected role causes political penalty."
+
+operators:
+  - id: O_role_drift
+    description: "Detect when an actor performs outside expected role."
+

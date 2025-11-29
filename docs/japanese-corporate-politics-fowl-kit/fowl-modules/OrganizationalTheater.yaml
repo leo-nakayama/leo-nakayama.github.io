@@ -1,0 +1,13 @@
+module: OrganizationalTheater
+version: "1.0"
+
+axioms:
+  - id: OT1
+    description: "Meetings function as stage performances."
+  - id: OT2
+    description: "Actors follow scripts more than logic."
+
+operators:
+  - id: O_stage_map
+    description: "Map scene, roles, props, and timing."
+

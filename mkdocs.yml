@@ -39,20 +39,42 @@ nav:
   - Aristotelian Biodome: reflective-computing/aristotelian-biodome.md
   - Dialectic Modes: reflective-computing/dialectic-modes.md
   - Manifesto: reflective-computing/reflective-computing-manifesto.md
-- Projects:
-  - FOWL: projects/FOWL.md
-  - Reflective Exchange Authoring: projects/reflective-exchange-authoring.md
-  - Relational Aesthetics Consulting Blueprint: projects/relational-aesthetics-consulting-blueprint.md
-  - DSL Inference App: projects/dsl-inference-app.md
-- High-Context Intelligence (HCCM):
-    - Overview: high-context-intelligence/index.md
-    - Chapter 1: high-context-intelligence/chapter1.md
-    - Chapter 2: high-context-intelligence/chapter2.md
-    - Chapter 3: high-context-intelligence/chapter3.md
-    - Chapter 4: high-context-intelligence/chapter4.md
-    - Chapter 5: high-context-intelligence/chapter5.md
-    - Chapter 6: high-context-intelligence/chapter6.md
-    - Chapter 7: high-context-intelligence/chapter7.md
+- FOWL:
+  - FOWL - What is it?: projects/FOWL.md
+  - Japanese Corporate Politics FOWL Kit:
+    - Overview: japanese-corporate-politics-fowl-kit/README.md
+    - Theory:
+      - High-Context Politics: japanese-corporate-politics-fowl-kit/theory/high-context-politics.md
+      - Ritualized Chaos: japanese-corporate-politics-fowl-kit/theory/ritualized-chaos.md
+      - Performative Manager Role: japanese-corporate-politics-fowl-kit/theory/performative-manager-role.md
+      - Kabuki-Style Chabudai Ritual: japanese-corporate-politics-fowl-kit/theory/kabuki-chabudai-ritual.md
+      - Bunraku Backstage Logic: japanese-corporate-politics-fowl-kit/theory/bunraku-backstage-logic.md
+      - Meta High/Low Context: japanese-corporate-politics-fowl-kit/theory/meta-highcontext-vs-lowcontext.md
+    - FOWL Modules:
+      - HighContextPolitics: japanese-corporate-politics-fowl-kit/fowl-modules/HighContextPolitics.yaml
+      - JapaneseRitualChaos: japanese-corporate-politics-fowl-kit/fowl-modules/JapaneseRitualChaos.yaml
+      - OrganizationalTheater: japanese-corporate-politics-fowl-kit/fowl-modules/OrganizationalTheater.yaml
+      - RolePerformanceLens: japanese-corporate-politics-fowl-kit/fowl-modules/RolePerformanceLens.yaml
+      - ObservationReport Template: japanese-corporate-politics-fowl-kit/fowl-modules/ObservationReport-template.md
+    - Case Files:
+      - AMV-01 Case (High-Context Organization): japanese-corporate-politics-fowl-kit/cases/case-ai-vendor-observations.md
+      - Shushin Organizational Model: japanese-corporate-politics-fowl-kit/cases/case-shushin-models.md
+      - Negotiation Under Ritualized Chaos: japanese-corporate-politics-fowl-kit/cases/case-negotiation-chaos.md
+    - Export:
+      - Japan Culture FOWL Module (PDF Source): japanese-corporate-politics-fowl-kit/export/FOWL-Japan-Culture-Module.pdf
+      - Researcher Guide (PDF Source): japanese-corporate-politics-fowl-kit/export/Researcher-Guide.pdf
+    - Reflective Exchange Authoring: projects/reflective-exchange-authoring.md
+    - Relational Aesthetics Consulting Blueprint: projects/relational-aesthetics-consulting-blueprint.md
+    - DSL Inference App: projects/dsl-inference-app.md
+  - High-Context Intelligence (HCCM):
+      - Overview: high-context-intelligence/index.md
+      - Chapter 1: high-context-intelligence/chapter1.md
+      - Chapter 2: high-context-intelligence/chapter2.md
+      - Chapter 3: high-context-intelligence/chapter3.md
+      - Chapter 4: high-context-intelligence/chapter4.md
+      - Chapter 5: high-context-intelligence/chapter5.md
+      - Chapter 6: high-context-intelligence/chapter6.md
+      - Chapter 7: high-context-intelligence/chapter7.md
 - Essays:
   - AI as the New Kokutai: essays/ai-as-the-new-kokutai.md
   - How to Get Started With FOWL Playbook Coding: essays/how-to-start-fowl-playbook-coding.md

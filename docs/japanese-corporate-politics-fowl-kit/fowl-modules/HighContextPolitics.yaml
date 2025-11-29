@@ -1,0 +1,19 @@
+module: HighContextPolitics
+version: "1.0"
+description: >
+  FOWL module for modeling Japanese high-context political structures.
+
+axioms:
+  - id: HC1
+    description: "Power flows implicitly through atmosphere, not explicit orders."
+  - id: HC2
+    description: "Silence is a political signal."
+  - id: HC3
+    description: "Contradiction is acceptable if relational harmony is preserved."
+
+operators:
+  - id: O_infer_silence
+    description: "Infer meaning from silence and non-responses."
+  - id: O_role_context
+    description: "Map actor behavior to high-context role expectations."
+
