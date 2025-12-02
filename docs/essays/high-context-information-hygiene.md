@@ -1,4 +1,9 @@
 # High-Context Information Hygiene  
+
+<p align="center">
+  <img src="../../assets/high-context-information-hygene-banner.png" alt="High-Context Information Hygiene" width="800">
+</p>
+
 ### Why Noise Corrupts Judgment — and How to Build a "Structural Data Only" Mindset  
 *By Leo Nakayama, Lyceum Vault*  
 *Published on https://leo-nakayama.github.io/*
@@ -6,7 +11,7 @@
 ## 1. Introduction
 In moments of geopolitical tension, the biggest threat to human judgment is not fear — it is **information noise**.
 
-Japan's current situation (November 2025), triggered by diplomatic friction between Tokyo and Beijing, demonstrates how rapidly public narratives can drift into emotional feedback loops. During such periods, the quality of information we consume directly determines the quality of our decisions.
+Japan's current situation (2025), triggered by diplomatic friction between Tokyo and Beijing, demonstrates how rapidly public narratives can drift into emotional feedback loops. During such periods, the quality of information we consume directly determines the quality of our decisions.
 
 This essay outlines a method called **High-Context Information Hygiene** — a systematic discipline for maintaining clarity, calmness, and structural awareness under stress.
 
