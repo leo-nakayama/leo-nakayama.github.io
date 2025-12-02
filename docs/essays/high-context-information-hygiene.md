@@ -179,4 +179,6 @@ This essay is part of an emerging series:
 **High-Context Intelligence Framework**  
 Integrating Japanese cultural logic, Western analytical logic, and AI-level cognitive hygiene into a unified operational model.
 
+**FOWL🦆Project: [High-Context Communication and Crisis Model (HCCM)](../high-context-intelligence/index.md)**
+
 Additional chapters will be published to the Lyceum Vault.
