@@ -1,9 +1,9 @@
-# **Japan as a Festival-State:
+# Japan as a Festival-State:
 
 Ritual, Context, and National Unity in a High-Context Civilization**
 
 *Version 1.0 — Foundational Article for High-Context Intelligence (HCI)*
-*By Leo & ChatGPT — Reflective Exchange Draft*
+*By Leo Nakayama*
 
 ---
 
