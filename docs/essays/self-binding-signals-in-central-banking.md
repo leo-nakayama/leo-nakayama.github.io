@@ -52,12 +52,12 @@ or **option-set manipulation**.
 
 ## 3. Case Study: The Bank of Japan (2025)
 
-### ⬤ Context
+### Context
 
 Japan has lived under ultra-low interest rates for decades.
 Any adjustment—no matter how small—requires **careful market choreography** to avoid panic.
 
-In early 2025, the BoJ made an interesting comment:
+In early December, 2025, the BoJ made an interesting comment:
 
 > **“Uncertainty surrounding U.S. monetary policy is no longer the major threat it once was.”**
 
