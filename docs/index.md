@@ -47,7 +47,7 @@ Recommended starting points:
 
 - [High-Context Information Hygiene](./essays/high-context-information-hygiene.md)  
 - [AI as the New Kokutai](./essays/ai-as-the-new-kokutai.md)  
-- [How to Start FOWL Playbook Coding](./essays/how-to-start-fowl-playbook-coding.md)
+- [How to Start FOWL Playbook Coding](./projects/how-to-start-fowl-playbook-coding.md)
 
 
 ---

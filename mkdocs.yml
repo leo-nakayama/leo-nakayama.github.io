@@ -41,6 +41,7 @@ nav:
   - Manifesto: reflective-computing/reflective-computing-manifesto.md
 - Projects:
   - FOWL - What is it?: projects/FOWL.md
+  - How to Get Started With FOWL Playbook Coding: projects/how-to-start-fowl-playbook-coding.md
   - Japanese Corporate Politics FOWL Kit:
     - Overview: japanese-corporate-politics-fowl-kit/README.md
     - Theory:
@@ -76,10 +77,9 @@ nav:
       - Chapter 6: high-context-intelligence/chapter6.md
       - Chapter 7: high-context-intelligence/chapter7.md
 - Essays:
+  - High-Context Information Hygiene: essays/high-context-information-hygiene.md
   - Japan as a Festival-State: essays/japan-as-a-festival-nation.md
   - AI as the New Kokutai: essays/ai-as-the-new-kokutai.md
-  - How to Get Started With FOWL Playbook Coding: essays/how-to-start-fowl-playbook-coding.md
-  - High-Context Information Hygiene: essays/high-context-information-hygiene.md
 - Notes:
   - Structural Logging Mode: notes/structual-logging-mode.md
   - Kokutai from Edo to Now: notes/Kokutai-from-edo-to-now.md
