@@ -1,4 +1,4 @@
-# Case File: AMV-01 (Amova-type High-Context Organization)
+# Case File: AD-01 (High-Context Organization)
 
 [Setting]
 A Japanese AI development firm exhibiting high-context political behavior.
