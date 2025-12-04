@@ -17,7 +17,6 @@ date: 2025-12-04
 social_image: /assets/banners/reflective-computing-social.png
 ---
 
-
 # **Reflective Computing**
 ### *A Cognitive Architecture for Thought, Structure, and Introspection*
 

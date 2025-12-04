@@ -36,3 +36,19 @@
   opacity: 0.7;
   margin-top: 2em;
 }
+
+/* 日本語テキスト用レイアウト調整 */
+.jp-text {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+/* jp-text 内の段落・リストに対して、より強い指定を上書きする */
+.jp-text p,
+.jp-text li {
+  line-height: 1.8;
+  white-space: normal;
+  word-break: break-word;    /* ここで keep-all を上書き */
+  overflow-wrap: break-word; /* anywhere よりも自然寄りにするならこれもアリ */
+}
+

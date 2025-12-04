@@ -105,6 +105,7 @@ nav:
 - 日本語:
   - ホーム: ja/index.md
   - 考察:
+      - 批判的思考と高文脈文化 - 四原因・トレードオフ構造分析 : ja/essays/critical-thinking-high-context-analysis.md
       - 認知UXとAIエージェントの比較分析: ja/essays/fowl-vs-ai-agents-ja.md
       - AIは新しい国体か: ja/essays/ai-as-the-new-kokutai-ja.md
       - 文脈依存性の不一致と国家安全保障: ja/essays/high-context-and-low-context.md
@@ -115,6 +116,7 @@ nav:
       - アベノミクス的インフレ構造の継続: ja/essays/abenomics-inflation.md
   - Observation Report:
       - 日本語版レポート一覧: ja/reports/index.md
+      - 創造者の「理想幻想」と現状受容に関する気づき: ja/reports/creator-realization-observation.md
       - 高文脈文化と安全保障 DSLレポート: ja/reports/high-context-low-context-report.md
       - アベノミクス的インフレ構造 - DSLレポート: ja/reports/abenomics-inflation-exec.md
   - ノート: 
