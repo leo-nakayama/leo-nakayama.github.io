@@ -114,6 +114,7 @@ nav:
       - アベノミクス的インフレ構造 - DSLレポート: ja/reports/abenomics-inflation-exec.md
   - ノート: 
       - 高文脈文化の誤読危機: ja/notes/high-context-crisis-overview.md
+      - 海外退避／移住のための金融ルート設計: ja/notes/emergency-remittance.md
 
 markdown_extensions:
   - admonition
