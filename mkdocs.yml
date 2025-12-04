@@ -34,11 +34,14 @@ extra:
 nav:
 - Home: index.md
 - Reflective Computing:
-  - Overview: reflective-computing/index.md
-  - Synthetic Naikan: reflective-computing/synthetic-naikan.md
-  - Aristotelian Biodome: reflective-computing/aristotelian-biodome.md
-  - Dialectic Modes: reflective-computing/dialectic-modes.md
-  - Manifesto: reflective-computing/reflective-computing-manifesto.md
+    - Overview: reflective-computing/index.md
+    - Core Concepts:
+        - Synthetic Naikan: reflective-computing/synthetic-naikan.md
+        - Aristotelian Biodome: reflective-computing/aristotelian-biodome.md
+        - Dialectic Modes: reflective-computing/dialectic-modes.md
+    - Essays:
+        - FOWL vs AI Agents: reflective-computing/fowl-vs-ai-agents.md
+    - Manifesto: reflective-computing/reflective-computing-manifesto.md
 - Projects:
   - FOWL - What is it?: projects/FOWL.md
   - How to Get Started With FOWL Playbook Coding: projects/how-to-start-fowl-playbook-coding.md
@@ -82,6 +85,7 @@ nav:
   - AI as the New Kokutai: essays/ai-as-the-new-kokutai.md
   - Self-Binding Signals in Central Banking: essays/self-binding-signals-in-central-banking.md
 - Notes:
+  - Reflective Exchange Demo with Gemini: notes/gemini-reflective-exchange-demo.md
   - Structural Logging Mode: notes/structual-logging-mode.md
   - Kokutai from Edo to Now: notes/Kokutai-from-edo-to-now.md
   - Psychological Economy of Abenomics: notes/Psychological-Economy-of-Abenomics.md
@@ -101,6 +105,7 @@ nav:
 - 日本語:
   - ホーム: ja/index.md
   - 考察:
+      - 認知UXとAIエージェントの比較分析: ja/essays/fowl-vs-ai-agents-ja.md
       - AIは新しい国体か: ja/essays/ai-as-the-new-kokutai-ja.md
       - 文脈依存性の不一致と国家安全保障: ja/essays/high-context-and-low-context.md
       - Reflective Computing概要: ja/essays/reflective-computing.md

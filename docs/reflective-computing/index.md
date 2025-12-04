@@ -1,111 +1,128 @@
-# Reflective Computing
+---
+title: "Reflective Computing"
+description: >
+  A unified framework for structured introspection, cognitive clarity, and
+  philosophical computation. Reflective Computing integrates Synthetic Naikan,
+  Aristotelian analysis, dialectical reasoning, and human–AI collaboration into
+  a single conceptual architecture.
+tags:
+  - Reflective Computing
+  - Cognitive Frameworks
+  - Structured Introspection
+  - Philosophy of Computation
+  - Human–AI Interaction
+authors:
+  - Leo Nakayama
+date: 2025-12-04
+---
 
-> “To compute is to look into one’s own thought — and return with form.”
+# **Reflective Computing**
+### *A Cognitive Architecture for Thought, Structure, and Introspection*
+
+Reflective Computing is a framework that unifies **introspection**,  
+**structured reasoning**, and **computational thinking**.  
+It is built on the idea that human cognition becomes more powerful —  
+not less — when it is expressed in explicit structures.
+
+This series introduces the core modules, conceptual foundations, and  
+applied essays that together form the Reflective Computing ecosystem.
 
 ---
 
-## Overview
-Reflective Computing treats programming, reasoning, and artistic composition as parts of the same cognitive circuit:
-> **Intuition → Formalization → Execution → Reflection → Revised Intuition.**
+## **1. What is Reflective Computing?**
 
-This cycle forms the operational rhythm of **Lyceum Vault**.  
-Where traditional computing optimizes for efficiency, Reflective Computing optimizes for **awareness** — turning every algorithm into a mirror of the mind that created it.
+Reflective Computing explores a central proposition:
 
----
+> **Human reasoning can be formalized without losing its depth.**
 
-## Core Modules
-| Module | Focus | Key Question |
-|---------|--------|--------------|
-| [Synthetic Naikan](synthetic-naikan.md) | Programmed introspection | “What have I received, given, and caused?” |
-| [Aristotelian Biodome](aristotelian-biodome.md) | Four Causes + Euclidean rhythm model | “How do form and telos co-emerge in creative systems?” |
-| [Dialectic Modes](dialectic-modes.md) | Contradiction and resolution as logic modes | “How can tension be made computable?” |
-| [Reflective Computing Manifesto](reflective-computing-manifesto.md) | Philosophical foundation | “Why does awareness belong in computation?” |
+Using methods drawn from:
+- Japanese introspective practices (e.g., Naikan),
+- Aristotelian causality and teleology,
+- Dialectical thinking,
+- Cognitive UX design,
+- And AI-assisted structural mapping,
 
----
+Reflective Computing aims to externalize mental processes so that  
+**thought becomes inspectable, audible, and improvable**.
 
-## Guiding Principles
-1. **Transparency of Thought** — Code should reveal, not obscure, the reasoning that shaped it.  
-2. **Ethical Loop** — Each execution produces not just output but *insight*.  
-3. **Dual Materiality** — Data and self-knowledge are both raw materials.  
-4. **Iteration as Virtue** — Reflection is a form of testing.  
-5. **Computation as Dialogue** — Between human intuition and machine formality.
+It is both a philosophical approach and a practical methodology.
 
 ---
 
-## Visual Summary
+## **2. Core Modules**
 
-```text
-                ┌─────────────────────────┐
-                │     Reflective Loop     │
-                │ Intuition → Formalize → │
-                │ Execute → Reflect  ↺    │
-                └───────────┬─────────────┘
-                            │
-     ┌──────────────────────┼──────────────────────┐
-     │                      │                      │
-┌────▼────┐           ┌─────▼────┐           ┌─────▼────┐
-│Synthetic│           │Aristotel.│           │Dialectic │
-│ Naikan  │           │ Biodome  │           │  Modes   │
-│(Intros.)│           │(Ontology)│           │(Transform) 
-└───┬─────┘           └────┬─────┘           └────┬─────┘
-    │  detects tensions        │ embodies synthesis   │ resolves contradictions
-    │                          │ (Material/Formal/    │ (Thesis ↔ Antithesis → Synthesis)
-    │                          │  Efficient/Final)    │
-    └─────────────── feeds back into revised intuition ────────────────┘
+These concepts form the foundation of the Reflective Computing architecture.
 
-Output artifacts:
-- Observation Reports (logs of receive/give/cause/reflect)
-- Evolving schemas (rhythm, harmony, operators)
-- Updated telos (evaluation criteria)
-```
+### **2.1 Synthetic Naikan**
+A computational reinterpretation of Naikan —  
+turning self-reflection into a structured, repeatable, and analyzable process  
+without losing the emotional depth of introspection.
 
-```mermaid
-flowchart TD
-  A[Intuition] --> B[Formalization]
-  B --> C[Execution]
-  C --> D[Reflection]
-  D --> A
+→ *[Read more](synthetic-naikan.md)*
 
-  subgraph Modules
-    N[Synthetic Naikan<br/>(Introspection)]
-    O[Aristotelian Biodome<br/>(Four Causes)]
-    M[Dialectic Modes<br/>(Thesis ↔ Antithesis → Synthesis)]
-  end
+### **2.2 Aristotelian Biodome**
+A cognitive “ecosystem” model based on the Four Causes,  
+revealing how purposes, materials, forms, and dynamics interact in any  
+psychological or organizational context.
 
-  D -.detects tensions.-> M
-  M -.produces synthesis.-> O
-  O -.re-embodies form.-> B
-  N -.observation loop.-> D
-  A -.human/machine dialogue.-> N
+→ *[Read more](aristotelian-biodome.md)*
 
-  subgraph Outputs
-    R[Observation Reports]
-    S[Evolving Schemas]
-    T[Updated Telos]
-  end
+### **2.3 Dialectic Modes**
+A set of formal modes for  
+- examining contradictions,  
+- generating synthesis,  
+- and externalizing implicit mental movements.
 
-  D --> R
-  M --> S
-  O --> T
-```
+→ *[Read more](dialectic-modes.md)*
 
 ---
 
-## Implementation in Lyceum Vault
-Each module combines:
-- **DSL schemas** that model reasoning or musical logic, and  
-- **Observation Reports** that track transformation over time.  
+## **3. Essays in Reflective Computing**
 
-Together they form a *meta-instrument* for composing, reasoning, and self-study — the **Reflective Workbench**.
+These essays apply the conceptual modules to broader questions in  
+cognition, culture, and human–AI collaboration.
 
----
+### **3.1 FOWL vs AI Agents — Cognitive UX in the Age of Automated Reasoning**
+A deep comparative analysis of cognitive UX (FOWL) and  
+automation UX (AI Agents), illustrating why structured reasoning becomes  
+more valuable — not less — as AI grows in capability.
 
-## Next Steps
-1. Integrate each sub-module page.  
-2. Link Observation Reports and DSL YAML schemas.  
-3. Expand this section into a public tutorial: *“Reflective Computing in Practice.”*
+→ *[Read the essay](fowl-vs-ai-agents.md)*
 
 ---
 
-*Draft v0.1 — Lyceum Vault Reflective Series Init*
+## **4. The Reflective Computing Manifesto**
 
+The manifesto articulates the philosophical foundations of the system:
+
+- The unity of thought and structure  
+- The role of introspection in computing  
+- The necessity of explicit reasoning in an age of AI  
+- The elevation of human cognition through formalization  
+
+→ *[Read the manifesto](reflective-computing-manifesto.md)*
+
+---
+
+## **5. Why Reflective Computing Matters**
+
+As AI systems begin to automate logic, workflows, and interpretations,  
+human agency increasingly depends on our ability to:
+
+- articulate intentions,  
+- expose assumptions,  
+- analyze incentives,  
+- and formalize reasoning.
+
+Reflective Computing provides the **cognitive scaffolding** that keeps  
+humans at the center of meaning-making in a world of automated systems.
+
+It is not a tool.  
+It is not a workflow.  
+
+It is **a way of thinking** — structured, deliberate, and deeply human.
+
+---
+
+### **Author**
+*Leo Nakayama*
