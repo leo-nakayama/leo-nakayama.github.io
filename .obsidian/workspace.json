@@ -1,0 +1,182 @@
+{
+  "main": {
+    "id": "5f8c796e9c4491ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "b7a2e77c32256b00",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0931ffea354e8a24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/notes/Configuring-SSH-Key-based-Authentication.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Configuring-SSH-Key-based-Authentication"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db86acbd6c177bce",
+    "type": "split",
+    "children": [
+      {
+        "id": "15547ab144c33842",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7610972a21ff7472",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "609ce137b6236e51",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f09730168304d6cb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4c24f20b74084cbb",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a848e9dda9366cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "59517cc970680b62",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/notes/Configuring-SSH-Key-based-Authentication.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Configuring-SSH-Key-based-Authentication"
+            }
+          },
+          {
+            "id": "ec9e62bf5bf2a67c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/notes/Configuring-SSH-Key-based-Authentication.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Configuring-SSH-Key-based-Authentication"
+            }
+          },
+          {
+            "id": "bbb7f91cb171fc8b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "bb75e5f65dad179a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/notes/Configuring-SSH-Key-based-Authentication.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Configuring-SSH-Key-based-Authentication"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "0931ffea354e8a24",
+  "lastOpenFiles": [
+    "docs/notes/edo-as-a-formal-cause-city.md",
+    "docs/essays/edo-as-a-formal-cause-city.md",
+    "docs/reflective-computing/cultural-cognition/chapter-4",
+    "docs/reflective-computing/cultural-cognition/chapter-3",
+    "docs/reflective-computing/cultural-cognition/chapter-2",
+    "docs/reflective-computing/cultural-cognition/chapter-1",
+    "docs/reflective-computing/cultural-cognition"
+  ]
+}
