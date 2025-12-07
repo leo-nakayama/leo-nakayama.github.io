@@ -1,6 +1,6 @@
 # Leo’s Lyceum Vault
 
-*A vault of Reflective Computing, High-Context Intelligence, and FOWL.*
+*-- Reflective Computing, High-Context Intelligence, and FOWL--*
 
 Welcome to my public knowledge space — a living notebook where I explore how humans think, reflect, decide, and create meaning, by combining:
 
