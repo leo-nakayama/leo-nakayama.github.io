@@ -106,6 +106,7 @@ nav:
 - 日本語:
   - ホーム: ja/index.md
   - 考察:
+      - 広島へ、私の思う「ノーモア・ヒロシマ」: ja/essays/hiroshima.md
       - 批判的思考と高文脈文化 - 四原因・トレードオフ構造分析 : ja/essays/critical-thinking-high-context-analysis.md
       - 認知UXとAIエージェントの比較分析: ja/essays/fowl-vs-ai-agents-ja.md
       - AIは新しい国体か: ja/essays/ai-as-the-new-kokutai-ja.md
@@ -115,7 +116,6 @@ nav:
       - 隻手の声とAIの自己分離: ja/essays/sekishu-experiment.md
       - 日本が輸出する新たな知財: ja/essays/philosophical-export.md
       - アベノミクス的インフレ構造の継続: ja/essays/abenomics-inflation.md
-      - 広島へ、私の思う「ノーモア・広島」: ja/essays/hiroshima.md
   - Observation Report:
       - 日本語版レポート一覧: ja/reports/index.md
       - 創造者の「理想幻想」と現状受容に関する気づき: ja/reports/creator-realization-observation.md
