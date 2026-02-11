@@ -99,6 +99,7 @@ nav:
   - Fcitx5 Setup (KDE/Ubuntu): notes/fcitx5-setup.md
   - Fedora Samba Permissions: notes/fedora-samba-permissions.md
   - GitHub Action vs AWS CI/CD: notes/github-actions-vs-aws-cicd.md
+  - Module Ideas: notes/module-ideas.md
 - Meta:
   - Content Update Protocol: meta/content-update-protocol.md
 
