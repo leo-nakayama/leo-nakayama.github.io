@@ -131,6 +131,6 @@ All outputs are designed for publication or internal training inside the **Lyceu
 
 ## 11. Next in Vault Series
 
-- [ FOWL — Fully Operational Wisdom and Logic](./FOWL.md)
+- [ FOWL — Fully Operational Wisdom and Logic](FOWL.md)
 
 ---

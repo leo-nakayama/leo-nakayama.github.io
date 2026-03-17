@@ -45,6 +45,7 @@ nav:
 - Projects:
   - FOWL - What is it?: projects/FOWL.md
   - How to Get Started With FOWL Playbook Coding: projects/how-to-start-fowl-playbook-coding.md
+  - Enhanced Ontology Transformer: projects/enhanced-ontology-transformer.md
   - Japanese Corporate Politics FOWL Kit:
     - Overview: japanese-corporate-politics-fowl-kit/README.md
     - Theory:
@@ -100,6 +101,7 @@ nav:
   - Fcitx5 Setup (KDE/Ubuntu): notes/fcitx5-setup.md
   - Fedora Samba Permissions: notes/fedora-samba-permissions.md
   - GitHub Action vs AWS CI/CD: notes/github-actions-vs-aws-cicd.md
+  - Real Time Recording Tips for Studio One: notes/Real-Time-Recording-Tips-for-Studio-One.md
   - Module Ideas: notes/module-ideas.md
 - Meta:
   - Content Update Protocol: meta/content-update-protocol.md
@@ -118,6 +120,7 @@ nav:
       - 隻手の声とAIの自己分離: ja/essays/sekishu-experiment.md
       - 日本が輸出する新たな知財: ja/essays/philosophical-export.md
       - アベノミクス的インフレ構造の継続: ja/essays/abenomics-inflation.md
+      - 日本の矛盾: ja/essays/contradictions-of-japan.md
   - Observation Report:
       - 日本語版レポート一覧: ja/reports/index.md
       - 創造者の「理想幻想」と現状受容に関する気づき: ja/reports/creator-realization-observation.md
